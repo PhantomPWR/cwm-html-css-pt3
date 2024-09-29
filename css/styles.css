@@ -441,3 +441,22 @@ a {
 		font-size: 1.6rem;
 	}
 }
+
+/* Grids */
+.grid {
+	display: grid;
+}
+
+/* 2 Columns - >= tablet */
+@media screen and (min-width: 768px) {
+	.grid--cols-2 {
+		grid-template-columns: repeat(2, 1fr); /* Alternatively, 1fr 1fr */
+	}
+}
+
+/* 3 Columns - >= desktop */
+@media screen and (min-width: 1024px) {
+	.grid--cols-3 {
+		grid-template-columns: repeat(3, 1fr); /* Alternatively, 1fr 1fr 1fr */
+	}
+}
