@@ -210,7 +210,7 @@ a {
 	text-transform: uppercase;
 	white-space: nowrap;
 	outline: 0;
-	padding: 2rem 3rem;
+	padding: 2rem 4vw;
 	transition: background-color 0.3s;
 }
 .btn .icon {
@@ -298,6 +298,7 @@ a {
 	border: 0;
 	flex-grow: 1;
 	padding: 1.5rem 2rem;
+	width: 0;
 }
 
 .input-group .btn {
@@ -702,11 +703,12 @@ a {
 	border: 0;
 	box-shadow: 0 0 30px 20px #e6ebee;
 	margin: 4rem auto;
-	max-width: 700px;
+	max-width: 670px;
 }
-.block__domain-prices {
+.block-domain__prices {
+	color: var(--color-headings);
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 6rem);
 	justify-items: center;
 	font-size: 2rem;
@@ -715,9 +717,8 @@ a {
 	max-width: 700px;
 }
 @media screen and (min-width: 768px) {
-	.block__domain-prices {
+	.block-domain__prices {
 		grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-		grid-template-rows: 1fr;
 	}
 }
 
